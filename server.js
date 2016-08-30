@@ -63,7 +63,7 @@ function postTweet(toot)
 var mentions = T.stream('user');
 mentions.on('tweet', function handleMention(tweet)
 {
-	if (tweet.in_reply_to_screen_name !== 'malcolm_ebooks')
+	if (tweet.in_reply_to_screen_name !== 'NMS_Species')
 		return;
 
 	var status = `@${tweet.user.screen_name}: Your species is like this:
