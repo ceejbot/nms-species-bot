@@ -2,6 +2,9 @@
 
 No Person's Sky species generation bot.
 
+Pull requests welcome, *especially* for more species images. Also, I feel it would be more fun to add new diets and temperaments than are used by the game. Keep them in the right spirit, please!
+
+
 ## Usage
 
 Clone the repo; run `npm install`. Create a file named `.env` in the repo directory and put your Twitter API access tokens in it like so:
@@ -15,7 +18,6 @@ TWITTER_ACCESS_TOKEN_SECRET=your-secret
 
 Then run `npm start`. Your bot will now be online.
 
-Pull requests welcome, *especially* for more species images.
 
 ## License
 
