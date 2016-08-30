@@ -13,3 +13,14 @@ radical
 rational
 symmetric
 vectorised
+all
+apex
+asymptomatic
+beta
+delta
+factorised
+gamma
+neuter
+non-binary
+omega
+symptomatic

@@ -8,3 +8,12 @@ juvenile
 mature
 perpetual
 young
+ancient
+infinite
+inverted
+middle-aged
+newborn
+reversing
+timeslipped
+undying
+youthful
