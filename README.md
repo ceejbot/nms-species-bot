@@ -9,13 +9,13 @@ Clone the repo; run `npm install`. Create a file named `.env` in the repo direct
 ```sh
 TWITTER_CONSUMER_KEY=your-key
 TWITTER_CONSUMER_SECRET=your-secret
-TWITTER_ACCESS_TOKEN=you-token
+TWITTER_ACCESS_TOKEN=your-token
 TWITTER_ACCESS_TOKEN_SECRET=your-secret
 ```
 
-Optionally, make a subdirectory named `images`.
-
 Then run `npm start`. Your bot will now be online.
+
+Pull requests welcome, *especially* for more species images.
 
 ## License
 
