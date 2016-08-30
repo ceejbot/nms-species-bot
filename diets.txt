@@ -1,0 +1,9 @@
+absorbed nutrients
+carnivore
+grazing creature
+herbivore
+insect-eater
+meat-eater
+oxide elements
+scavenger
+vegetation

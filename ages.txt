@@ -1,0 +1,10 @@
+adult
+constant
+elderly
+fluctuating
+indeterminate
+infant
+juvenile
+mature
+perpetual
+young

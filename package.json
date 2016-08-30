@@ -1,0 +1,19 @@
+{
+  "name": "nms-species-bot",
+  "description": "No Person's Sky species generation bot.",
+  "version": "1.0.0",
+  "author": "C J Silverio <ceejceej@gmail.com>",
+  "dependencies": {
+    "dotenv": "~2.0.0",
+    "knuth-shuffle": "~1.0.1",
+    "twit": "~2.2.4"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
