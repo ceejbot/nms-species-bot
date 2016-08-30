@@ -3,15 +3,23 @@
   "description": "No Person's Sky species generation bot.",
   "version": "1.0.0",
   "author": "C J Silverio <ceejceej@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/ceejbot/nms-species-bot/issues"
+  },
   "dependencies": {
     "dotenv": "~2.0.0",
     "knuth-shuffle": "~1.0.1",
     "twit": "~2.2.4"
   },
   "devDependencies": {},
+  "homepage": "https://github.com/ceejbot/nms-species-bot#readme",
   "keywords": [],
   "license": "ISC",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceejbot/nms-species-bot.git"
+  },
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
