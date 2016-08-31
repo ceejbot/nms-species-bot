@@ -2,9 +2,10 @@
 
 require('dotenv').config();
 var
-	fs        = require('fs'),
-	shuffle   = require('knuth-shuffle').knuthShuffle,
-	Twit      = require('twit')
+	fs       = require('fs'),
+	phonetic = require('phonetic'),
+	shuffle  = require('knuth-shuffle').knuthShuffle,
+	Twit     = require('twit')
 	;
 
 const INTERVAL = 180 * 60 * 1000; // once every 3 hours
@@ -28,13 +29,9 @@ function getMeOne(which)
 	return DATA[which][0];
 }
 
-var DATA = {
-	ages:         readOptions('ages'),
-	genders:      readOptions('genders'),
-	temperaments: readOptions('temperaments'),
-	diets:        readOptions('diets'),
-	images:       readOptions('images'),
-};
+var DATA_TYPES = ['ages', 'genders', 'temperaments', 'diets', 'images'];
+var DATA = {};
+DATA_TYPES.forEach(function (t) { DATA[t] = readOptions(t); })
 
 var config = {
 	consumer_key:         process.env.TWITTER_CONSUMER_KEY,
@@ -85,10 +82,9 @@ mentions.on('error', function handleMentionsError(err)
 
 function buildSpecies()
 {
-	var result = `age: ${getMeOne('ages')}`;
-
-	if (result.length < 140)
-		result += '\ngender: ' + getMeOne('genders');
+	var result = phonetic.generate(4) + ' ' + phonetic.generate(3);
+	result += '\nage: ' + getMeOne('ages');
+	result += '\ngender: ' + getMeOne('genders');
 
 	if (result.length < 140)
 		result += '\ntemperament: ' + getMeOne('temperaments');

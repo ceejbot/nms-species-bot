@@ -9,6 +9,7 @@
   "dependencies": {
     "dotenv": "~2.0.0",
     "knuth-shuffle": "~1.0.1",
+    "phonetic": "~0.1.1",
     "twit": "~2.2.4"
   },
   "devDependencies": {},
