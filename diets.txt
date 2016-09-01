@@ -13,6 +13,7 @@ ferrites
 nectar
 omnivore
 piscivore
+plastics
 pollen
 radioactives
 rare earths

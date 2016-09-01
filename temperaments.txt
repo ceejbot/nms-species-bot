@@ -39,6 +39,8 @@ degenerate
 delightful
 distracted
 distressing
+domesticated
+dreamy
 graceful
 grateful
 indefensible
@@ -46,6 +48,7 @@ loyal
 manic
 melancholic
 murderous
+perverse
 phlegmatic
 playful
 protective

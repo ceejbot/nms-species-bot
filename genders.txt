@@ -22,5 +22,6 @@ factorised
 gamma
 neuter
 non-binary
+non-ternary
 omega
 symptomatic
