@@ -1,0 +1,51 @@
+<html>
+<head>
+    <style>
+        BODY {
+            font-family: Helvetica, sans-serif;
+            font-size: 10pt;
+            margin: 0;
+            padding: 1em;
+        }
+        #container {
+            background-color: #352323;
+            color: white;
+            border-radius: 1em;
+            width: 280px;
+            overflow: hidden;
+        }
+        .category {
+            color: #dabd7a;
+        }
+        #header {
+            background: linear-gradient(to right, #e6a924, #9a7610);
+            color: #fff297;
+            font-size: 12pt;
+            padding: 15px;
+            margin-bottom: 1em
+        }
+        #description {
+            padding-left: 15px
+        }
+        #snap {
+    		padding:15px;
+    	}
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            {{name}}
+        </div>
+        <div id="description">
+            <span class="category">Age:</span> {{age}}<br>
+            <span class="category">Gender:</span> {{gender}}<br>
+            <span class="category">Temperament:</span> {{temperament}}<br>
+            <span class="category">Diet:</span> {{diet}}<br>
+        </div>
+        <img id="snap" src="{{{image}}}" width="250">
+    </div>
+</body>
+
+</html>

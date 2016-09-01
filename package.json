@@ -9,6 +9,9 @@
   "dependencies": {
     "dotenv": "~2.0.0",
     "knuth-shuffle": "~1.0.1",
+    "mustache": "~2.2.1",
+    "phantom": "~2.1.21",
+    "phantomjs-prebuilt": "~2.1.12",
     "phonetic": "~0.1.1",
     "twit": "~2.2.4"
   },
@@ -22,7 +25,9 @@
     "url": "git+https://github.com/ceejbot/nms-species-bot.git"
   },
   "scripts": {
-    "start": "node server.js",
+    "old": "node server.js",
+    "render": "node render.js",
+    "start": "node ghosts.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
 }
