@@ -19,7 +19,7 @@ Phantom.create().then(instance =>
 })
 .then(status =>
 {
-    page.property('viewportSize', { width: 350, height: 150 });
+    page.property('viewportSize', { width: 285, height: 150 });
     page.render(OUTPUT_FILE);
 }).then(function()
 {
