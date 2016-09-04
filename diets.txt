@@ -1,20 +1,42 @@
 absorbed nutrients
-carnivore
-grazing creature
-herbivore
-insect-eater
-meat-eater
-oxide elements
-scavenger
-vegetation
+avivore
 cannibal
+carnivore
 carrion
-ferrites
-nectar
+coprophage
+detrivore
+durophage
+folivore
+fungivore
+geophage–ferrites
+geophage–oxides
+geophage–plastics
+geophage–radioactives
+geophage–rare earths
+geophage–silicate
+graminivore
+granivore
+gummivore
+haematophage
+herbivore
+insectivore
+invertivore
+keratophage
+lepidophage
+liquivore
+mesograzer
+molluscivore
+mucophage
+myrmecophage
+nectarivore
+obligate carnivore
 omnivore
+osteophage
+palynivore
 piscivore
-plastics
-pollen
-radioactives
-rare earths
-silicates
+planktivore
+saprophage
+scavenger
+spongivore
+vermivore
+xylophage

@@ -45,7 +45,7 @@ var config = {
 };
 var T = new Twit(config);
 
-function postTweet(toot)
+function postTweet(toot, skip)
 {
 	T.post('statuses/update', toot, function handleTootResponse(err, data, res)
 	{
@@ -54,7 +54,7 @@ function postTweet(toot)
 		else
 		{
 			log('tweet id=' + data.id_str + '; ' + toot.status);
-			fs.writeFileSync(LAST_POST_FILE, (new Date()).toString());
+			if (!skip) fs.writeFileSync(LAST_POST_FILE, (new Date()).toString());
 		}
 	});
 }
@@ -68,8 +68,8 @@ function buildSpecies()
 		temperament: getMeOne('temperaments'),
 		diet:        getMeOne('diets'),
 		name:        phonetic.generate({ syllables: 4, compoundSimplicity: 3}) +
-					 ' ' +
-					 phonetic.generate({syllables: 3}),
+					' ' +
+					phonetic.generate({syllables: 3}),
 	};
 	var result = mustache.render(template, items);
 	fs.writeFileSync('input.html', result);
@@ -125,7 +125,7 @@ mentions.on('tweet', function handleMention(tweet)
 				in_reply_to_status_id: tweet.id_str,
 				media_ids: [ imageID ]
 			};
-			postTweet(toot);
+			postTweet(toot, true);
 		});
 	});
 });
