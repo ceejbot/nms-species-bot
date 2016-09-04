@@ -8,12 +8,12 @@ detrivore
 durophage
 folivore
 fungivore
-geophage–ferrites
-geophage–oxides
-geophage–plastics
-geophage–radioactives
-geophage–rare earths
-geophage–silicate
+geophage - ferrites
+geophage - oxides
+geophage - plastics
+geophage - radioactives
+geophage - rare earths
+geophage - silicate
 graminivore
 granivore
 gummivore
