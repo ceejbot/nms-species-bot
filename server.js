@@ -31,7 +31,7 @@ function getMeOne(which)
 
 var DATA_TYPES = ['ages', 'genders', 'temperaments', 'diets', 'images'];
 var DATA = {};
-DATA_TYPES.forEach(function (t) { DATA[t] = readOptions(t); })
+DATA_TYPES.forEach(function(t) { DATA[t] = readOptions(t); });
 
 var config = {
 	consumer_key:         process.env.TWITTER_CONSUMER_KEY,

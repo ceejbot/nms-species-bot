@@ -9,24 +9,25 @@ var page, phantom;
 
 Phantom.create().then(instance =>
 {
-    phantom = instance;
-    return instance.createPage();
+	phantom = instance;
+	return instance.createPage();
 })
 .then(result =>
 {
-    page = result;
-    return page.open(HTML_FILE);
+	page = result;
+	return page.open(HTML_FILE);
 })
 .then(status =>
 {
-    page.property('viewportSize', { width: 290, height: 150 });
-    page.render(OUTPUT_FILE);
+	page.property('viewportSize', { width: 290, height: 150 });
+	page.render(OUTPUT_FILE);
 }).then(function()
 {
 	page.close();
 	phantom.exit();
 })
-.catch(error => {
-    console.log(error);
-    phantom.exit(1);
+.catch(error =>
+{
+	console.log(error);
+	phantom.exit(1);
 });
