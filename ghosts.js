@@ -21,7 +21,7 @@ function log(msg)
 
 function readOptions(which)
 {
-	var lines = fs.readFileSync('./' + which + '.txt', 'ascii').trim().split('\n');
+	var lines = fs.readFileSync('./' + which + '.txt', 'utf8').trim().split('\n');
 	log(['---', lines.length, which, 'read'].join(' '));
 	return lines;
 }
