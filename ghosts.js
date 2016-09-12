@@ -29,12 +29,19 @@ function readOptions(which)
 function getMeOne(which)
 {
 	shuffle(DATA[which]);
-	return DATA[which][0];
+
+	var ptr = 0;
+	while(lastOne[which] === DATA[which][ptr])
+		ptr++;
+
+	lastOne[which] = DATA[which][ptr];
+	return lastOne[which];
 }
 
 var DATA_TYPES = ['ages', 'genders', 'temperaments', 'diets', 'images'];
 var DATA = {};
 DATA_TYPES.forEach(function map(t) { DATA[t] = readOptions(t); });
+var lastOne = {};
 
 var config = {
 	consumer_key:         process.env.TWITTER_CONSUMER_KEY,
