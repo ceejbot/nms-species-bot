@@ -23,25 +23,22 @@ function readOptions(which)
 {
 	var lines = fs.readFileSync('./' + which + '.txt', 'utf8').trim().split('\n');
 	log(['---', lines.length, which, 'read'].join(' '));
+	shuffle(lines);
 	return lines;
 }
 
 function getMeOne(which)
 {
-	shuffle(DATA[which]);
+	var use = DATA[which].pop();
+	if (DATA[which].length < 1)
+		DATA[which] = readOptions(which);
 
-	var ptr = 0;
-	while(lastOne[which] === DATA[which][ptr])
-		ptr++;
-
-	lastOne[which] = DATA[which][ptr];
-	return lastOne[which];
+	return use;
 }
 
 var DATA_TYPES = ['ages', 'genders', 'temperaments', 'diets', 'images'];
 var DATA = {};
 DATA_TYPES.forEach(function map(t) { DATA[t] = readOptions(t); });
-var lastOne = {};
 
 var config = {
 	consumer_key:         process.env.TWITTER_CONSUMER_KEY,
