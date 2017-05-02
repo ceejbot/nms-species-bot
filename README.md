@@ -1,5 +1,7 @@
 # nms-species-bot
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ceejbot/nms-species-bot.svg)](https://greenkeeper.io/)
+
 No Person's Sky species generation bot.
 
 Pull requests welcome, *especially* for more species images. Also, I feel it would be more fun to add new diets and temperaments than are used by the game. Keep them in the right spirit, please!
