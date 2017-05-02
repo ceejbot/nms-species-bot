@@ -7,10 +7,10 @@
     "url": "https://github.com/ceejbot/nms-species-bot/issues"
   },
   "dependencies": {
-    "dotenv": "~2.0.0",
+    "dotenv": "~4.0.0",
     "knuth-shuffle": "~1.0.1",
-    "mustache": "~2.2.1",
-    "phantom": "~2.1.21",
+    "mustache": "~2.3.0",
+    "phantom": "~4.0.3",
     "phantomjs-prebuilt": "~2.1.12",
     "phonetic": "~0.1.1",
     "twit": "~2.2.5"
